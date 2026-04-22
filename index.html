@@ -3,44 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sumit Maharjan | Portfolio</title>
+  <title>Sumit Maharjan | Full-Stack Developer</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav id="navbar">
     <div class="nav-container">
-      <span class="logo">Sumit.</span>
+      <span class="logo">SM.</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="nav-social">
+        <a href="https://github.com/MaharjanSumit-59" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
-<section id="hero">
-  <span class="hero-available">Available for opportunities</span>
-  <h1>Hi, I'm<br><span class="highlight">Sumit Maharjan.</span></h1>
-  <p>Full-Stack Developer · ML Enthusiast · CS Engineer</p>
-  <a href="#projects" class="btn">View Projects</a>
-  <a href="Sumit_CV.pdf" class="btn btn-outline" download>Download CV</a>
-</section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Final-year Computer Engineering student at Khwopa Engineering College.
-    I build full-stack web apps, RESTful APIs, and data-driven dashboards.
-    Currently seeking roles in software and data-focused domains.</p>
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-available">
+          Available for opportunities
+        </span>
+        <h1>Hi, I'm<br><span class="highlight" id="typed-name">Sumit Maharjan.</span></h1>
+        <p class="hero-sub">
+          <span id="typed-role"></span>
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="Sumit_CV.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="images/profile.jpg" alt="Sumit Maharjan" />
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-container">
+      <div class="stat">
+        <span class="stat-number">3+</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">8+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">2+</span>
+        <span class="stat-label">Years Coding</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">2026</span>
+        <span class="stat-label">Graduating</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-in">
+    <div class="section-label">About Me</div>
+    <h2>Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a final-year Computer Engineering student at <span class="cyan">Khwopa Engineering College</span>, passionate about building things that live on the internet.</p>
+        <p style="margin-top: 14px;">I specialize in full-stack web development and data-driven applications — from building scalable backends with Django and Node.js to creating interactive ML dashboards with Streamlit.</p>
+        <p style="margin-top: 14px;">When I'm not coding, I'm exploring new technologies and working on side projects that solve real problems.</p>
+      </div>
+      <div class="about-details">
+        <div class="detail-item">
+          <span class="detail-label">Location</span>
+          <span class="detail-value">Lalitpur, Nepal</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Email</span>
+          <span class="detail-value">sumitmahz@gmail.com</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Degree</span>
+          <span class="detail-value">B.E. Computer Engineering</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Status</span>
+          <span class="detail-value cyan">Open to work</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="fade-in">
+    <div class="section-label">Background</div>
+    <h2>Experience & Education</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 – Present</span>
+          <h3>Bachelor in Computer Engineering</h3>
+          <span class="timeline-place">Khwopa Engineering College · Purbanchal University</span>
+          <p>Studying core CS fundamentals, algorithms, databases, and software engineering. Actively building projects alongside academics.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023 – Present</span>
+          <h3>Full-Stack Developer</h3>
+          <span class="timeline-place">Academic & Personal Projects</span>
+          <p>Built and deployed multiple web applications using Django, Node.js, and Express.js. Integrated third-party APIs and implemented ML models for real-world datasets.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023</span>
+          <h3>Machine Learning</h3>
+          <span class="timeline-place">Self-directed Learning</span>
+          <p>Applied Linear Regression and data analytics using Scikit-learn, NumPy, and Pandas on real financial datasets.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
   <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
+  <section id="skills" class="fade-in">
+    <div class="section-label">Tech Stack</div>
+    <h2>Skills & Tools</h2>
     <div class="skills-grid">
       <div class="skill-category">
         <h3>Languages</h3>
@@ -61,38 +174,64 @@
         </div>
       </div>
       <div class="skill-category">
-        <h3>Libraries & Tools</h3>
+        <h3>Libraries</h3>
         <div class="tags">
           <span>NumPy</span>
           <span>Pandas</span>
           <span>Scikit-learn</span>
+          <span>Matplotlib</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Tools</h3>
+        <div class="tags">
           <span>Git</span>
+          <span>GitHub</span>
           <span>PostgreSQL</span>
+          <span>VS Code</span>
         </div>
       </div>
     </div>
   </section>
 
+  <hr class="divider">
+
   <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="projects" class="fade-in">
+    <div class="section-label">Work</div>
+    <h2>Things I've Built</h2>
     <div class="projects-grid">
 
       <div class="project-card">
-        <div class="project-num">01</div> 
+        <div class="project-top">
+          <div class="project-num">01</div>
+          <div class="project-links">
+            <a href="https://github.com/MaharjanSumit-59" target="_blank" title="View Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
         <h3>Stock Price Predictor</h3>
-        <p>A stock forecasting tool using Linear Regression and yFinance API with an interactive Streamlit dashboard.</p>
+        <p>A stock forecasting tool using Linear Regression and yFinance API with an interactive Streamlit dashboard for visualizing trends.</p>
         <div class="tags">
           <span>Python</span>
           <span>Scikit-learn</span>
           <span>Streamlit</span>
+          <span>yFinance</span>
         </div>
       </div>
 
       <div class="project-card">
-        <div class="project-num">02</div> 
+        <div class="project-top">
+          <div class="project-num">02</div>
+          <div class="project-links">
+            <a href="https://github.com/MaharjanSumit-59" target="_blank" title="View Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
         <h3>Node.js Auth Server</h3>
-        <p>A secure authentication server with JWT token-based sessions and scalable Express.js architecture.</p>
+        <p>A secure authentication server with JWT token-based sessions and scalable Express.js architecture for handling multiple users.</p>
         <div class="tags">
           <span>Node.js</span>
           <span>Express.js</span>
@@ -101,9 +240,16 @@
       </div>
 
       <div class="project-card">
-        <div class="project-num">03</div> 
+        <div class="project-top">
+          <div class="project-num">03</div>
+          <div class="project-links">
+            <a href="https://github.com/MaharjanSumit-59" target="_blank" title="View Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
         <h3>BrainStorm Quiz App</h3>
-        <p>A full-stack quiz platform with authentication, randomized questions, and automated scoring built in Django.</p>
+        <p>A full-stack quiz platform with authentication, randomized questions, and automated scoring built with Django and PostgreSQL.</p>
         <div class="tags">
           <span>Django</span>
           <span>Python</span>
@@ -114,19 +260,53 @@
     </div>
   </section>
 
+  <hr class="divider">
+
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="fade-in">
+    <div class="section-label">Contact</div>
     <h2>Get In Touch</h2>
-    <p>Feel free to reach out for opportunities or collaborations.</p>
-    <div class="contact-links">
-      <a href="mailto:sumitmahz@gmail.com">sumitmahz@gmail.com</a>
-      <a href="https://github.com/MaharjanSumit-59" target="_blank">GitHub</a>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is open!</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sumitmahz@gmail.com">sumitmahz@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Lalitpur, Nepal</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/MaharjanSumit-59" target="_blank">MaharjanSumit-59</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>Designed & built by Sumit Maharjan</p>
+    <div class="footer-social">
+      <a href="https://github.com/MaharjanSumit-59" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sumitmahz@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Designed & built by <span class="cyan">Sumit Maharjan</span></p>
   </footer>
 
   <script src="js/main.js"></script>
